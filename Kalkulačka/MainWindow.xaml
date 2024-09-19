@@ -23,7 +23,7 @@
         <Button Content="0" Click="numClick" HorizontalAlignment="Left" Margin="148,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
         <Button x:Name="equ" Click="equClick" Content="=" HorizontalAlignment="Left" Margin="249,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
         <Button x:Name="div" Click="divClick"  Content="/" HorizontalAlignment="Left" Margin="347,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <TextBox x:Name="output" HorizontalAlignment="Left" Height="65" Margin="50,29,0,0" TextWrapping="Wrap" Text="" FontSize="40" VerticalAlignment="Top" Width="377"/>
+        <TextBox x:Name="output" IsReadOnly="True" HorizontalAlignment="Left" Height="65" Margin="50,29,0,0" TextWrapping="Wrap" Text="" FontSize="40" VerticalAlignment="Top" Width="377"/>
 
     </Grid>
 </Window>
