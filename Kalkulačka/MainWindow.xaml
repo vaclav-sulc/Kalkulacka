@@ -5,25 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kalkulačka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="600">
-    <Grid>
-        <Button Content="7" Click="numClick" HorizontalAlignment="Left" Margin="50,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="8" Click="numClick" HorizontalAlignment="Left" Margin="148,114,0,0" VerticalAlignment="Top" Height="45" Width="80" />
-        <Button Content="9" Click="numClick" HorizontalAlignment="Left" Margin="249,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="add" Click="addClick"  Content="+" HorizontalAlignment="Left" Margin="347,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="4" Click="numClick" HorizontalAlignment="Left" Margin="50,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="5" Click="numClick" HorizontalAlignment="Left" Margin="148,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="6" Click="numClick" HorizontalAlignment="Left" Margin="249,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="sub" Click="subClick"  Content="-" HorizontalAlignment="Left" Margin="347,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="1" Click="numClick" HorizontalAlignment="Left" Margin="50,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="2" Click="numClick" HorizontalAlignment="Left" Margin="148,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="3" Click="numClick" HorizontalAlignment="Left" Margin="249,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="mul" Click="mulClick"  Content="*" HorizontalAlignment="Left" Margin="347,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="del" Click="delClick" Content="DEL" HorizontalAlignment="Left" Margin="50,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button Content="0" Click="numClick" HorizontalAlignment="Left" Margin="148,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="equ" Click="equClick" Content="=" HorizontalAlignment="Left" Margin="249,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <Button x:Name="div" Click="divClick"  Content="/" HorizontalAlignment="Left" Margin="347,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
-        <TextBox x:Name="output" IsReadOnly="True" HorizontalAlignment="Left" Height="65" Margin="50,29,0,0" TextWrapping="Wrap" Text="" FontSize="40" VerticalAlignment="Top" Width="377"/>
+        Title="MainWindow" Height="426" Width="462" ResizeMode="CanMinimize" Background="Black">
+    <Grid HorizontalAlignment="Center" Width="442" Margin="0,0,0,-16">
+        <Button Content="7" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="32,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="8" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="130,114,0,0" VerticalAlignment="Top" Height="45" Width="80" />
+        <Button Content="9" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="232,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button x:Name="add" Background="#ffab00"  Click="addClick"  Content="+" HorizontalAlignment="Left" Margin="329,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="4" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="32,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="5" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="130,179,0,0" VerticalAlignment="Top" Height="45" Width="80" RenderTransformOrigin="0.138,0.512"/>
+        <Button Content="6" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="232,179,0,0" VerticalAlignment="Top" Height="45" Width="80" RenderTransformOrigin="-0.225,0.601"/>
+        <Button x:Name="sub" Background="#ffab00" Click="subClick"  Content="-" HorizontalAlignment="Left" Margin="329,179,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="1" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="32,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="2" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="130,240,0,0" VerticalAlignment="Top" Height="45" Width="80" RenderTransformOrigin="-0.112,0.512"/>
+        <Button Content="3" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="232,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button x:Name="mul" Background="#ffab00" Click="mulClick"  Content="*" HorizontalAlignment="Left" Margin="329,240,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button x:Name="del" Background="#ffab00" Click="delClick" Content="DEL" HorizontalAlignment="Left" Margin="32,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button Content="0" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="130,305,0,0" VerticalAlignment="Top" Height="45" Width="80" RenderTransformOrigin="0.1,0.423"/>
+        <Button x:Name="equ" Background="#ffab00" Click="equClick" Content="=" HorizontalAlignment="Left" Margin="232,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button x:Name="div" Background="#ffab00" Click="divClick"  Content="/" HorizontalAlignment="Left" Margin="329,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <TextBox x:Name="output" BorderThickness="0"  Background="Black" Foreground="White" IsReadOnly="True" HorizontalAlignment="Left" Height="65" Margin="32,28,0,0" TextWrapping="Wrap" Text="" FontSize="40" VerticalAlignment="Top" Width="377"/>
 
     </Grid>
 </Window>
