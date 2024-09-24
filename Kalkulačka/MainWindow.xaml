@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kalkulačka"
         mc:Ignorable="d"
-        Title="MainWindow" Height="426" Width="462" ResizeMode="CanMinimize" Background="Black">
+        Title="MainWindow" Height="500" Width="462" ResizeMode="CanMinimize" Background="Black">
     <Grid HorizontalAlignment="Center" Width="442" Margin="0,0,0,-16">
         <Button Content="7" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="32,114,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
         <Button Content="8" BorderThickness="0" Background="#2e2e2d" Foreground="White" Click="numClick" HorizontalAlignment="Left" Margin="130,114,0,0" VerticalAlignment="Top" Height="45" Width="80" />
@@ -24,6 +24,8 @@
         <Button x:Name="equ" Background="#ffab00" Click="equClick" Content="=" HorizontalAlignment="Left" Margin="232,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
         <Button x:Name="div" Background="#ffab00" Click="divClick"  Content="/" HorizontalAlignment="Left" Margin="329,305,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
         <TextBox x:Name="output" BorderThickness="0"  Background="Black" Foreground="White" IsReadOnly="True" HorizontalAlignment="Left" Height="65" Margin="32,28,0,0" TextWrapping="Wrap" Text="" FontSize="40" VerticalAlignment="Top" Width="377"/>
+        <Button x:Name="dec" Background="#ffab00" Click="decClick" Content="," FontSize="20" HorizontalAlignment="Left" Margin="32,366,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
+        <Button x:Name="neg" Background="#ffab00" Click="negClick" Content="+/-" HorizontalAlignment="Left" Margin="130,366,0,0" VerticalAlignment="Top" Height="45" Width="80"/>
 
     </Grid>
 </Window>

@@ -20,9 +20,9 @@ namespace Kalkulačka
     /// </summary>
     public partial class MainWindow : Window
     {
-        int num1 = 0;
-        int num2 = 0;
-        int result = 0;
+        double num1 = 0;
+        double num2 = 0;
+        double result = 0;
         char operation = ' ';
 
         public MainWindow()
@@ -37,51 +37,86 @@ namespace Kalkulačka
 
         private void addClick(object sender, RoutedEventArgs e)
         {
-            num1 = int.Parse(output.Text);
-            operation = '+';
-            output.Text = "";
+            try
+            {
+                num1 = double.Parse(output.Text);
+                operation = '+';
+                output.Text = "";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
         }
 
         private void subClick(object sender, RoutedEventArgs e)
         {
-            num1 = int.Parse(output.Text);
-            operation = '-';
-            output.Text = "";
+            try
+            {
+                num1 = double.Parse(output.Text);
+                operation = '-';
+                output.Text = "";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
         }
 
         private void mulClick(object sender, RoutedEventArgs e)
         {
-            num1 = int.Parse(output.Text);
-            operation = '*';
-            output.Text = "";
+            try
+            {
+                num1 = double.Parse(output.Text);
+                operation = '*';
+                output.Text = "";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
         }
 
         private void divClick(object sender, RoutedEventArgs e)
         {
-            num1 = int.Parse(output.Text);
-            operation = '/';
-            output.Text = "";
+            try
+            {
+                num1 = double.Parse(output.Text);
+                operation = '/';
+                output.Text = "";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
         }
 
         private void equClick(object sender, RoutedEventArgs e)
         {
-            num2 = int.Parse(output.Text);
+            try
+            {
+                num2 = double.Parse(output.Text);
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
             switch (operation)
             {
                 case '+':
-                    result = num1 + num2;
+                    result = Math.Round(num1 + num2, 3);
                     output.Text = result.ToString();
                     break;
                 case '-':
-                    result = num1 - num2;
+                    result = Math.Round(num1 - num2, 3);
                     output.Text = result.ToString();
                     break;
                 case '*':
-                    result = num1 * num2;
+                    result = Math.Round (num1 * num2, 3);
                     output.Text = result.ToString();
                     break;
                 case '/':
-                    result = num1 / num2;
+                    result = Math.Round(num1 / num2, 3);
                     output.Text = result.ToString();
                     break;
             }
@@ -90,7 +125,39 @@ namespace Kalkulačka
 
         private void delClick(object sender, RoutedEventArgs e)
         {
-            output.Text = "";
+            try
+            {
+                output.Text = "";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
+        }
+
+        private void decClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                output.Text += ",";
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
+        }
+
+        private void negClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                output.Text = (double.Parse(output.Text) * -1).ToString();
+            }
+            catch (Exception)
+            {
+                output.Text = "Error";
+            }
+            
         }
     }
 }
