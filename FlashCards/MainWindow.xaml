@@ -1,0 +1,16 @@
+﻿<Window x:Class="FlashCards.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlashCards"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="476" Width="819">
+    <Grid Margin="0,0,-12,0">
+        <Button Content="Show Answer" Click="ShowAnswerButton_Click" Width="200" Height="50" Margin="32,263,568,121"/>
+        <Button Content="Next Question" Click="NextQuestionButton_Click" Width="200" Height="50" Margin="568,263,32,121"/>
+        <Button Content="Check The Answer" Click="CheckTheAnswer_Click" Width="200" Height="50" Margin="300,263,300,121"/>
+        <TextBlock x:Name="FlashcardQuestion" FontSize="40" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="56" Width="736"/>
+        <TextBox x:Name="FlashcardAnswer" HorizontalAlignment="Center" FontSize="40" TextAlignment="Center"  Margin="0,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="736" Height="56"/>
+    </Grid>
+</Window>
