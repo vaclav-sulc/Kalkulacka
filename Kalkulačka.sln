@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulačka", "Kalkulačka\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashCards", "FlashCards\FlashCards.csproj", "{557C84D8-393E-4ADD-AD19-69253E8D58B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{5405C687-B222-4937-B852-DFC918E0A509}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{557C84D8-393E-4ADD-AD19-69253E8D58B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{557C84D8-393E-4ADD-AD19-69253E8D58B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{557C84D8-393E-4ADD-AD19-69253E8D58B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5405C687-B222-4937-B852-DFC918E0A509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5405C687-B222-4937-B852-DFC918E0A509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5405C687-B222-4937-B852-DFC918E0A509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5405C687-B222-4937-B852-DFC918E0A509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
