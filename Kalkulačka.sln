@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashCards", "FlashCards\Fl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{5405C687-B222-4937-B852-DFC918E0A509}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{0F980396-87C1-49BC-A4D9-1ADADF6FD18F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5405C687-B222-4937-B852-DFC918E0A509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5405C687-B222-4937-B852-DFC918E0A509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5405C687-B222-4937-B852-DFC918E0A509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F980396-87C1-49BC-A4D9-1ADADF6FD18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F980396-87C1-49BC-A4D9-1ADADF6FD18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F980396-87C1-49BC-A4D9-1ADADF6FD18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F980396-87C1-49BC-A4D9-1ADADF6FD18F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
