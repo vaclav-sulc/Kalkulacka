@@ -26,11 +26,30 @@ namespace login
             InitializeComponent();
         }
 
-        prihlasovaciUdaje prihlasovaciUdaje = new prihlasovaciUdaje();
+        prihlasovaciUdaje prihlasovaciudaje = new prihlasovaciUdaje();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (LoginBox.Text == prihlasovaciUdaje.Login)
+            if (LoginBox.Text == prihlasovaciudaje.Login)
+            {
+                if (PasswordBox.Password == prihlasovaciudaje.Password)
+                {
+                    MessageBox.Show("Přihlášení proběhlo úspěšně");
+                }
+                else
+                {
+                    MessageBox.Show("Špatné heslo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Špatné jméno");
+            }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 
