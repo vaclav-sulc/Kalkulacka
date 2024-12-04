@@ -127,7 +127,7 @@ namespace Kalkulačka
         {
             try
             {
-                output.Text = "";
+                output.Text = output.Text.Remove(output.Text.Length - 1);
             }
             catch (Exception)
             {
@@ -149,6 +149,10 @@ namespace Kalkulačka
 
         private void negClick(object sender, RoutedEventArgs e)
         {
+            if (output.Text == null)
+            {
+                output.Text = "0";
+            }
             try
             {
                 output.Text = (double.Parse(output.Text) * -1).ToString();
@@ -158,6 +162,11 @@ namespace Kalkulačka
                 output.Text = "Error";
             }
             
+        }
+
+        private void clrClick(object sender, RoutedEventArgs e)
+        {
+            output.Text = "";
         }
     }
 }
